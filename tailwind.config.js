@@ -1,9 +1,24 @@
 module.exports = {
-  mode: 'jit',
+  mode: process.env.NODE_ENV ? 'jit' : '',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: {
+          light: '#193cbd',
+          DEFAULT: '#112c91',
+          dark: '#08164a',
+        },
+      },
+      background: {
+        main: {
+          light: '#193cbd',
+          DEFAULT: '#112c91',
+          dark: '#08164a',
+        },
+      },
+    },
   },
   variants: {
     extend: {},

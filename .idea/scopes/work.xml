@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="work" pattern="file[omad-water]:pages//*||file:tailwind.config.js||file[omad-water]:public//*||file[omad-water]:components//*||file:next.config.js||file:package.json" />
+</component>

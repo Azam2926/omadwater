@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Omad Water</title>
       </Head>
+      main
     </Layout>
   )
 }

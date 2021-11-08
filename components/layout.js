@@ -54,21 +54,21 @@ export default function Layout ({ children }) {
           </div>
           <div className={`grid w-full ${isOpen ? '' : 'hidden'}`}>
             <ul className={'text-sm font-semibold p-4 pt-0 divide-y space-y-4 tracking-[1px]'}>
-              <li className={'pt-4 border-t-[1px]'}>
-                <Link href={'/'}>
+              <Link href={'/'}>
+                <li className={'pt-4 border-t-[1px] cursor-pointer'} onClick={toggler}>
                   Bosh sahifa
-                </Link>
-              </li>
-              <li className={'pt-4'}>
-                <Link href={'about'}>
+                </li>
+              </Link>
+              <Link href={'about'}>
+                <li className={'pt-4 cursor-pointer'} onClick={toggler}>
                   Biz haqimizda
-                </Link>
-              </li>
-              <li className={'pt-4'}>
-                <Link href={'contact'}>
+                </li>
+              </Link>
+              <Link href={'contact'}>
+                <li className={'pt-4 cursor-pointer'} onClick={toggler}>
                   Biz bilan bog'laning
-                </Link>
-              </li>
+                </li>
+              </Link>
             </ul>
             <div className="flex order-[-1] text-xs m-4 mt-3 font-semibold tracking-[1px]">
               <div className="">
@@ -97,7 +97,6 @@ export default function Layout ({ children }) {
         </div>
       </nav>
       <main>{children}</main>
-      <footer className={'fixed bottom-0'}>footer</footer>
     </>
   )
 }

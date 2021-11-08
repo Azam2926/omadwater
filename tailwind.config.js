@@ -6,6 +6,10 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      padding: {
+        btnY: '0.7em',
+        btnX: '3em',
+      },
       boxShadow: {
         'omad': '0 20px 30px 0 rgba(41, 112, 250, 0.2)',
       },
@@ -19,18 +23,20 @@ module.exports = {
           DEFAULT: '#112c91',
           dark: '#08164a',
         },
+        btnLeft: {
+          light: '#67b5ff',
+          DEFAULT: '#67b5ff',
+          dark: '#2644a4',
+        },
+        btnRight: {
+          light: '#4d86ff',
+          DEFAULT: '#4d86ff',
+          dark: '#08164a',
+        },
+
       },
-      background: {
-        main: {
-          light: '#193cbd',
-          DEFAULT: '#112c91',
-          dark: '#08164a',
-        },
-        btn: {
-          light: '#67b5ff linear-gradient(120deg, rgba(103, 151, 255, 0) 0%, #4d86ff 100%)',
-          DEFAULT: '#112c91',
-          dark: '#08164a',
-        },
+      backgroundImage: {
+        buttonGradient: 'linear-gradient(120deg, rgba(103, 151, 255, 0) 0%, var(--tw-gradient-stops) 100%)',
       },
     },
   },

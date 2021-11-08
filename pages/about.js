@@ -1,45 +1,18 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
 
 export default function About () {
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           About
         </title>
       </Head>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-      <h1>About</h1>
-    </Layout>
+      <section className={'px-4 py-14 space-y-4'}>
+        <h1 className={'text-5xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'}>
+          <span className={'text-[#379eff]'}>Biz haqimizda</span>
+        </h1>
+      </section>
+    </>
   )
 }

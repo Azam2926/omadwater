@@ -33,10 +33,6 @@ module.exports = {
           DEFAULT: '#4d86ff',
           dark: '#08164a',
         },
-
-      },
-      backgroundImage: {
-        buttonGradient: 'linear-gradient(120deg, rgba(103, 151, 255, 0) 0%, var(--tw-gradient-stops) 100%)',
       },
     },
   },
@@ -44,11 +40,14 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(function ({addUtilities}) {
       const newUtilities = {
         '.flex-basis-31px': {
           flexBasis: '31px',
         },
+        '.bg-omad-btn': {
+          background: '#67b5ff linear-gradient(120deg, rgba(103, 151, 255, 0) 0%, #4d86ff 100%)'
+        }
       }
       addUtilities(newUtilities, ['responsive', 'hover'])
     }),

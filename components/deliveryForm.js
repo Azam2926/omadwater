@@ -3,7 +3,7 @@ import tgService from "../services/tg.service";
 import _ from 'lodash'
 
 export default function DeliveryForm() {
-  const {register, handleSubmit, formState: {isSubmitting, isSubmitted}} = useForm()
+  const {register, handleSubmit, formState: {isSubmitting, isSubmitSuccessful}} = useForm()
   const sendForm = async (data) => {
     let message = ''
     Object.keys(data).forEach((key) => message += `*${_.startCase(key)}*: ${data[key]} \n`)
@@ -12,7 +12,8 @@ export default function DeliveryForm() {
         console.log(err)
       })
   }
-  return isSubmitted ? (
+
+  return isSubmitSuccessful ? (
     <h1 className={'animate-fade-in text-3xl text-[#379eff] font-bold tracking-[3px]  text-center leading-tight'}>
       Buyurtmangiz uchun rahmat!
     </h1>

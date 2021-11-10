@@ -1,23 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 
-// const navigation = [
-//   { name: 'Suvlar', href: '#' },
-//   { name: 'Yetkazib berish', href: '#' },
-//   { name: 'Biz haqimizda', href: '#about' },
-//   { name: 'Bog\'lanish', href: '#' },
-// ]
-
-export default function Layout ({ children }) {
+export default function Layout({children}) {
 
   const [isOpen, setIsOpen] = useState(false)
   const toggler = () => setIsOpen(!isOpen)
-
-  useEffect(() => {
-    console.log('cretated')
-  }, [])
 
   useEffect(() => {
     if (isOpen) document.body.style.overflow = 'hidden'

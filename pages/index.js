@@ -10,10 +10,12 @@ export default function Home() {
         <title>Omad Water</title>
       </Head>
       <section className={'px-4 py-14 space-y-4'}>
-        <h1 className={'text-5xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'}><span
-          className={'text-[#379eff]'}>Suv</span> Yetkazish</h1>
-        <p className={'text-center px-4'}>Uyingizga suv yetkazib beramiz. Quyidagi yetkazib berish shaklini to‘ldirish
-          kifoya.</p>
+        <h1 className={'text-5xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'}>
+          <span className={'text-[#379eff]'}>Suv</span> Yetkazish
+        </h1>
+        <p className={'text-center px-4'}>
+          Uyingizga suv yetkazib beramiz. Quyidagi yetkazib berish shaklini to‘ldirish kifoya.
+        </p>
         <div className={'relative h-2'}>
           <Image src={wavePicture} layout={'fill'} objectFit={'contain'}/>
         </div>

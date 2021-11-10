@@ -6,6 +6,19 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        'fade-in': 'fade-in 2s 1',
+        'fade-out': 'fade-out 1s 1'
+      },
+      keyframes: {
+        'fade-in': {
+          from: {opacity: 0},
+          to: {opacity: 1}
+        },
+        'fade-out': {
+          to: {opacity: 0}
+        }
+      },
       padding: {
         btnY: '0.7em',
         btnX: '3em',

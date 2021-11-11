@@ -31,10 +31,20 @@ module.exports = {
         'dosis': ['dosis', 'sans-serif'],
       },
       colors: {
+        primary: {
+          light: '#379eff',
+          DEFAULT: '#379eff',
+          dark: '#379eff',
+        },
         main: {
           light: '#193cbd',
           DEFAULT: '#112c91',
           dark: '#08164a',
+        },
+        footer: {
+          light: '#120d48',
+          DEFAULT: '#120d48',
+          dark: '#120d48',
         },
         btnLeft: {
           light: '#67b5ff',

@@ -13,8 +13,8 @@ export default function Home() {
         <h1 className={'text-5xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'}>
           <span className={'text-[#379eff]'}>Suv</span> Yetkazish
         </h1>
-        <p className={'text-center px-4'}>
-          Uyingizga suv yetkazib beramiz. Quyidagi yetkazib berish shaklini to‘ldirish kifoya.
+        <p className={'text-center text-xl leading-normal px-4'}>
+          Uyingizga suv yetkazib beramiz. Quyidagi yetkazib berish formasini to‘ldirish kifoya.
         </p>
         <div className={'relative h-2'}>
           <Image src={wavePicture} layout={'fill'} objectFit={'contain'}/>
@@ -23,6 +23,7 @@ export default function Home() {
           <DeliveryForm/>
         </div>
       </section>
+
     </>
   )
 }

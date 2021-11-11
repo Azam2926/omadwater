@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
 import {useEffect, useState} from 'react'
+import Footer from "./footer";
 
 export default function Layout({children}) {
 
@@ -24,12 +25,12 @@ export default function Layout({children}) {
             <button className={'flex items-center space-y-2 my-2 px-3 cursor-pointer'} onClick={toggler}>
             <span className={'w-[26px] h-3 relative'}>
               <span
-                className={`transition-all ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 w-full ${isOpen
+                className={`transition-all block ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 w-full ${isOpen
                   ? 'top-1'
                   : 'top-0'
                 }`}/>
               <span
-                className={`transition-all ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 ${isOpen
+                className={`transition-all block ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 ${isOpen
                   ? 'w-full top-2'
                   : 'w-3/5 top-3'
                 }`}/>
@@ -86,6 +87,7 @@ export default function Layout({children}) {
         </div>
       </nav>
       <main>{children}</main>
+      <Footer/>
     </>
   )
 }

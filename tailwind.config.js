@@ -59,7 +59,7 @@ module.exports = {
       },
       backgroundImage: {
         'section': 'linear-gradient(180deg, #FFFFFF 0%, #F3FAFF 100%)',
-        'drop-filled': "url('/images/drop-filled.png')"
+        'drop-filled': `url("/images/drop-filled.png")`
       },
       backgroundSize: {
         'right-drop-size': '150px auto',

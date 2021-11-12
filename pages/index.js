@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='relative h-[285px]'>
+          <div className='relative h-[285px] my-12'>
             <Image src={waterBottlePicture} layout={'fill'} objectFit={'contain'}/>
           </div>
           <div className="flex flex-wrap p-[10px]">

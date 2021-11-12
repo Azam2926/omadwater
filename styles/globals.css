@@ -4,6 +4,6 @@
 
 @layer components {
     .before-text {
-        @apply before:w-1 before:mr-3 before:inline-flex before:rounded-full before:bg-primary;
+        @apply before:w-1 before:mr-3 before:inline-flex before:rounded-full before:bg-primary
     }
 }

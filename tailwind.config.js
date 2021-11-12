@@ -27,7 +27,7 @@ module.exports = {
         'omad': '0 20px 30px 0 rgba(41, 112, 250, 0.2)',
       },
       fontFamily: {
-        'nunito': ['nunito', 'sans-serif'],
+        'nunito': ['"Nunito"', 'arial', 'sans-serif'],
         'dosis': ['dosis', 'sans-serif'],
       },
       colors: {
@@ -57,6 +57,14 @@ module.exports = {
           dark: '#08164a',
         },
       },
+      backgroundImage: {
+        'section': 'linear-gradient(180deg, #FFFFFF 0%, #F3FAFF 100%)',
+        'drop-filled': "url('/images/drop-filled.png')"
+      },
+      backgroundSize: {
+        'right-drop-size': '150px auto',
+        'left-drop-size': '135px auto'
+      }
     },
   },
   variants: {

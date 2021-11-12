@@ -3,6 +3,7 @@ import Image from 'next/image'
 import wavePicture from '../public/images/wave.png'
 import waveDividerPicture from '../public/images/wave-divider.png'
 import waterBottlePicture from '../public/images/water-bottle.png'
+import dropFilledPicture from '../public/images/drop-filled.png'
 import DeliveryForm from "../components/deliveryForm";
 
 export default function Home() {

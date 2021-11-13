@@ -4,7 +4,6 @@ import wavePicture from '../public/images/wave.png'
 import waveDividerPicture from '../public/images/wave-divider.png'
 import waterBottlePicture from '../public/images/water-bottle.png'
 import DeliveryForm from "../components/deliveryForm";
-import microscopePicture from "../public/images/microscope.png";
 
 export default function Home() {
   return (

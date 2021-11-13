@@ -4,6 +4,7 @@ import wavePicture from '../public/images/wave.png'
 import waveDividerPicture from '../public/images/wave-divider.png'
 import waterBottlePicture from '../public/images/water-bottle.png'
 import DeliveryForm from "../components/deliveryForm";
+import microscopePicture from "../public/images/microscope.png";
 
 export default function Home() {
   return (
@@ -70,7 +71,7 @@ export default function Home() {
           <div className='relative h-[285px] my-12'>
             <Image src={waterBottlePicture} layout={'fill'} objectFit={'contain'}/>
           </div>
-          <div className="flex flex-wrap p-[10px]">
+          <div className="flex flex-wrap p-[10px] space-y-8">
             <div className="flex flex-col pt-16 pl-12 bg-drop-filled bg-top-left bg-no-repeat bg-left-drop-size">
               <div className="space-y-2">
                 <h6 className='font-bold text-xl'>Magniy Mg2+</h6>
@@ -103,7 +104,6 @@ export default function Home() {
         <div className='mt-8'>
           <Image src={waveDividerPicture} layout={'responsive'}/>
         </div>
-
       </section>
     </>
   )

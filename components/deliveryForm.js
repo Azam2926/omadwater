@@ -23,7 +23,7 @@ export default function DeliveryForm() {
       <input {...register('manzili')} className={'focus:ring-2 ring-blue-500 outline-none py-3 px-6 border rounded-full mx-auto w-full'} required type="text" placeholder={'Manzilingiz'}/>
       <input {...register('tel_nomeri', {pattern: /^[0-9+]+$/i})} className={'focus:ring-2 ring-blue-500 outline-none py-3 px-6 border rounded-full mx-auto w-full'} required type="text" placeholder={'Telefon raqamingiz'}/>
       <input {...register('soni', {pattern: /^[0-9]+$/i})} className={'focus:ring-2 ring-blue-500 outline-none py-3 px-6 border rounded-full mx-auto w-full'} required type="number" placeholder={'Nechta kapsula'}/>
-      <button disabled={isSubmitting} className={'flex hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX'} type="submit">
+      <button disabled={isSubmitting} className={'transition-all flex hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX'} type="submit">
         {isSubmitting ? (
           <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>

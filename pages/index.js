@@ -3,7 +3,30 @@ import Image from 'next/image'
 import wavePicture from '../public/images/wave.png'
 import waveDividerPicture from '../public/images/wave-divider.png'
 import waterBottlePicture from '../public/images/water-bottle.png'
+import microscopePicture from '../public/images/microscope.png'
+import flaskPicture from '../public/images/flask.png'
+import glassPicture from '../public/images/glass.png'
+import certificationPicture from '../public/images/certification.png'
 import DeliveryForm from "../components/deliveryForm";
+
+const story_boxes = [
+  {
+    picture: microscopePicture,
+    text: 'Laboratoriya nazorati'
+  },
+  {
+    picture: flaskPicture,
+    text: 'Ajoyib kompozitsiya'
+  },
+  {
+    picture: glassPicture,
+    text: 'Nano filtrlash darajasi'
+  },
+  {
+    picture: certificationPicture,
+    text: 'Sifat sertifikatlari'
+  },
+]
 
 export default function Home() {
   return (
@@ -100,6 +123,35 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className='mt-8'>
+          <Image src={waveDividerPicture} layout={'responsive'}/>
+        </div>
+      </section>
+      <section className="bg-section">
+        <div className='px-4 py-14 space-y-8'>
+          <h2 className='text-4xl font-bold font-dosis tracking-[1px] uppercase text-center leading-tight'>
+            <span className='text-[#379eff]'>Bizning</span> hikoya
+          </h2>
+          <div className='relative h-2'>
+            <Image src={wavePicture} layout={'fill'} objectFit={'contain'}/>
+          </div>
+          <p className='text-center text-xl leading-normal px-4'>
+            Bizning kompaniyamiz 2008 yilda tashkil etilgan. Suv markasi shishasi ichish, ovqat pishirish, mashg'ulotlar va hatto bolalar uchun juda yaxshi. Mahsulot 50 ta davlatda sertifikatlangan.
+          </p>
+        </div>
+        <div className="flex flex-wrap">
+          {story_boxes.map(box => (
+            <div className="flex flex-col p-8 space-y-8 w-1/2">
+              <div className="bg-white shadow-omad-story rounded-full p-[30%] text-center">
+                <Image src={box.picture}/>
+              </div>
+              <p className='text-center text-[#081F46] font-semibold tracking-[2px] leading-5 font-dosis uppercase'>{box.text}</p>
+            </div>
+          ))}
+        </div>
+
+
+
         <div className='mt-8'>
           <Image src={waveDividerPicture} layout={'responsive'}/>
         </div>

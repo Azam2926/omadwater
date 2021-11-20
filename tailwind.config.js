@@ -25,6 +25,7 @@ module.exports = {
       },
       boxShadow: {
         'omad': '0 20px 30px 0 rgba(41, 112, 250, 0.2)',
+        'omad-story': '0px 8px 44px 0px rgba(41.00000000000001, 112.00000000000016, 250, 0.15)'
       },
       fontFamily: {
         'nunito': ['"Nunito"', 'arial', 'sans-serif'],

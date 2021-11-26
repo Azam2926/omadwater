@@ -7,6 +7,11 @@ import microscopePicture from '../public/images/microscope.png'
 import flaskPicture from '../public/images/flask.png'
 import glassPicture from '../public/images/glass.png'
 import certificationPicture from '../public/images/certification.png'
+import deliveryServicePicture from '../public/images/delivery-service.png'
+import curveWhilePicture from '../public/images/curve-while.png'
+import freePicture from '../public/images/free.png'
+import scheadulePicture from '../public/images/scheadule.png'
+import timePicture from '../public/images/time.png'
 import DeliveryForm from "../components/deliveryForm";
 
 const story_boxes = [
@@ -27,6 +32,20 @@ const story_boxes = [
     text: 'Sifat sertifikatlari'
   },
 ]
+const delivery_boxes = [
+  {
+    picture: freePicture,
+    text: 'Tekin yetkazish'
+  },
+  {
+    picture: scheadulePicture,
+    text: 'Haftada 7 kun'
+  },
+  {
+    picture: timePicture,
+    text: '00:00 - 24:00'
+  },
+]
 
 export default function Home() {
   return (
@@ -42,7 +61,7 @@ export default function Home() {
           <p className='text-center text-xl leading-normal px-4'>
             Uyingizga suv yetkazib beramiz. Quyidagi yetkazib berish formasini to‘ldirish kifoya.
           </p>
-          <div className='relative h-2'>
+          <div id='order' className='relative h-2'>
             <Image src={wavePicture} layout={'fill'} objectFit={'contain'}/>
           </div>
           <div className='shadow-omad rounded-xl p-8 m-2 mt-4 text-base'>
@@ -149,12 +168,46 @@ export default function Home() {
             </div>
           ))}
         </div>
-
-
-
         <div className='mt-8'>
-          <Image src={waveDividerPicture} layout={'responsive'}/>
+          <Image src={curveWhilePicture} layout={'responsive'}/>
         </div>
+      </section>
+      <section className="bg-section">
+        <div className="bg-white shadow-omad p-4 m-5 rounded-lg">
+          <div className="flex flex-col space-y-8 py-4">
+            <div className="relative p-4">
+              <Image src={deliveryServicePicture} className={'rounded-full'} layout={'responsive'}/>
+            </div>
+            <div className="space-y-4 py-8 px-3 mb-8">
+              <h1 className='text-4xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'>
+                Etkazib berish <span className='text-[#379eff]'>Xizmati</span>
+              </h1>
+              <p className='text-center leading-6 tracking-[2px] text-xl '>
+                Bizning temmali tozalangan suvingizni etkazib berish xizmati bilan to'g'ridan-to'g'ri eshigingizga etkazish mumkin.
+              </p>
+            </div>
+
+            <div className="flex flex-col px-6 space-y-6 font-dosis">
+              {delivery_boxes.map(box => (
+                <div className="flex items-center">
+                  <div className="w-1/4 mr-2">
+                    <Image src={box.picture} layout={'intrinsic'}/>
+                  </div>
+                  <div className='flex uppercase font-bold tracking-[1px] text-footer text-xl'>
+                    <span className='font-black text-primary mr-1'>|</span>
+                    <p>{box.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <a href='#order' className='flex hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX'>
+              <span>Hoziroq buyurtma bering</span>
+            </a>
+
+          </div>
+        </div>
+
       </section>
     </>
   )

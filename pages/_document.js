@@ -3,7 +3,7 @@ import Document, {Head, Html, Main, NextScript} from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html className='scroll-smooth'>
         <Head>
           {/*<link rel="icon" href={"/images/favicon.png"} sizes="32x32" />*/}
           <link rel="dns-prefetch" href="//fonts.googleapis.com"/>

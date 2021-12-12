@@ -1,9 +1,6 @@
 const plugin = require('tailwindcss/plugin')
-
 module.exports = {
-  mode: process.env.NODE_ENV ? 'jit' : '',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // or 'media' or 'class'
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
       animation: {
@@ -66,10 +63,7 @@ module.exports = {
         'right-drop-size': '150px auto',
         'left-drop-size': '135px auto'
       }
-    },
-  },
-  variants: {
-    extend: {},
+    }
   },
   plugins: [
     plugin(function ({addUtilities}) {

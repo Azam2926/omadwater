@@ -92,12 +92,12 @@ export default function Home() {
       </Head>
       <section className='bg-section'>
         <div className='flex justify-center'>
-          <div className='hidden md:block md:w-1/4 md:max-w-sm'>
-            <div className='mr-[-200%]'>
+          <div className='z-10 hidden md:block md:w-1/4 md:max-w-sm'>
+            <div className='mr-[-200%] py-48 px-24'>
               <Image src={distilledWaterBottledPicture} layout='responsive' objectFit='fill' />
             </div>
           </div>
-          <div className='px-4 py-14 space-y-8 md:w-3/4'>
+          <div className='z-20 px-4 py-14 space-y-8 md:w-3/4'>
             <h1 className='text-5xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'>
               <span className='text-[#379eff]'>Suv</span> Yetkazish
             </h1>
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
       <section className="bg-section">
         <div className="grid items-center">
-          <div className="max-w-screen-xl bg-white shadow-omad p-10 m-4 rounded-lg lg:py-16">
+          <div className="max-w-screen-lg mx-auto bg-white shadow-omad p-10 m-4 rounded-lg lg:py-16">
             <div className="flex flex-col space-y-2 py-4 lg:flex-row lg:space-y-0 lg:space-x-4">
               <div className="relative p-4 lg:p-0 lg:grid lg:items-center lg:w-1/2">
                 <Image src={deliveryServicePicture} layout={'responsive'} />

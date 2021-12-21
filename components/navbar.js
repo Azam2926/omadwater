@@ -15,8 +15,8 @@ export default function Navbar() {
         <div className="flex justify-between w-full ">
           <button className='flex items-center space-y-2 my-2 px-3 cursor-pointer' onClick={toggler}>
             <span className='w-[26px] h-3 relative'>
-              <span className={`transition-all block ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 w-full ${isOpen ? 'top-1' : 'top-0'}`}/>
-              <span className={`transition-all block ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 ${isOpen ? 'w-full top-2' : 'w-3/5 top-3'}`}/>
+              <span className={`transition-all  ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 w-full ${isOpen ? 'top-1' : 'top-0'}`}/>
+              <span className={`transition-all  ease-linear duration-[.1806s] absolute block bg-black rounded h-0.5 ${isOpen ? 'w-full top-2' : 'w-3/5 top-3'}`}/>
             </span>
           </button>
           <Link href={'/'}>

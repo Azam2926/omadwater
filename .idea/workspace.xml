@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ea600c3-8cfe-4e71-a9f6-632e60436dd1" name="Changes" comment="ome change" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="work" />
+    </order>
+  </component>
+  <component name="ProjectId" id="1yYZyDhcCpozrI3b5dadOdvxium" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ea600c3-8cfe-4e71-a9f6-632e60436dd1" name="Changes" comment="" />
+      <created>1632430733911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632430733911</updated>
+      <workItem from="1632430735282" duration="13154000" />
+      <workItem from="1632651957654" duration="1471000" />
+      <workItem from="1632657848175" duration="1175000" />
+      <workItem from="1632842981658" duration="5854000" />
+      <workItem from="1633958155568" duration="233000" />
+      <workItem from="1634889781335" duration="330000" />
+      <workItem from="1635927892318" duration="4438000" />
+      <workItem from="1636019564935" duration="993000" />
+      <workItem from="1639653087689" duration="10000" />
+      <workItem from="1639653121553" duration="70000" />
+      <workItem from="1639653216109" duration="37000" />
+      <workItem from="1639653680310" duration="44000" />
+      <workItem from="1639662359245" duration="336000" />
+      <workItem from="1639770816979" duration="381000" />
+      <workItem from="1639909097010" duration="177000" />
+      <workItem from="1640024700422" duration="43000" />
+      <workItem from="1640024769245" duration="74000" />
+      <workItem from="1640025039345" duration="30000" />
+      <workItem from="1641838109644" duration="28000" />
+      <workItem from="1641838783030" duration="96000" />
+      <workItem from="1641838906266" duration="144000" />
+      <workItem from="1642108597378" duration="32000" />
+    </task>
+    <task id="LOCAL-00001" summary="ome change">
+      <created>1634889864707</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634889864707</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ome change">
+      <created>1636020545209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636020545210</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ome change" />
+    <option name="LAST_COMMIT_MESSAGE" value="ome change" />
+  </component>
+</project>

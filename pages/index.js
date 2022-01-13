@@ -4,6 +4,7 @@ import DeliveryForm from "../components/deliveryForm"
 import certificationPicture from '../public/images/certification.png'
 import curveWhilePicture from '../public/images/curve-while.png'
 import deliveryServicePicture from '../public/images/delivery-service.png'
+import distilledWaterBottledPicture from '../public/images/distilled-water-bottled.png'
 import flaskPicture from '../public/images/flask.png'
 import freePicture from '../public/images/free.png'
 import glassPicture from '../public/images/glass.png'
@@ -13,7 +14,6 @@ import timePicture from '../public/images/time.png'
 import waterBottlePicture from '../public/images/water-bottle.png'
 import waveDividerPicture from '../public/images/wave-divider.png'
 import wavePicture from '../public/images/wave.png'
-import distilledWaterBottledPicture from '../public/images/distilled-water-bottled.png'
 
 const drops = {
   right: [
@@ -92,12 +92,12 @@ export default function Home() {
       </Head>
       <section className='bg-section'>
         <div className='flex justify-center'>
-          <div className='hidden md:block md:w-1/4 md:max-w-sm'>
-              <div className='mr-[-200%]'>
-              <Image src={distilledWaterBottledPicture} layout='responsive' objectFit='fill'/>
-              </div>
+          <div className='z-10 hidden md:block md:w-1/4 md:max-w-sm'>
+            <div className='mr-[-200%] py-48 px-24'>
+              <Image src={distilledWaterBottledPicture} layout='responsive' objectFit='fill' />
+            </div>
           </div>
-          <div className='px-4 py-14 space-y-8 md:w-3/4'>
+          <div className='z-20 px-4 py-14 space-y-8 md:w-3/4'>
             <h1 className='text-5xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'>
               <span className='text-[#379eff]'>Suv</span> Yetkazish
             </h1>
@@ -124,9 +124,9 @@ export default function Home() {
           <p className='text-center text-base leading-none font-semibold tracking-[2px] uppercase'>Nimalardan tashkil topgan?</p>
         </div>
         <div className="flex flex-col md:flex-row">
-          <div className="flex flex-wrap p-[10px] space-y-8 lg:w-1/3">
-            {drops.right.map((drop, key) => (
-              <div key={key} className="flex flex-col pt-16 space-y-2 pr-12 text-right bg-drop-filled bg-right-top bg-no-repeat bg-right-drop-size">
+          <div className="flex flex-wrap justify-end p-[10px] space-y-8 lg:w-1/3">
+            {drops.right.map((drop, index) => (
+              <div key={index} className="flex flex-col pt-16 space-y-2 pr-12 text-right bg-drop-filled bg-right-top bg-no-repeat bg-right-drop-size">
                 <h6 className='font-bold text-xl'>{drop.title}</h6>
                 <h6 className='text-primary font-bold text-xl leading-4'>{drop.capacity}</h6>
                 <p className='tracking-[1px]'>
@@ -138,9 +138,9 @@ export default function Home() {
           <div className='relative h-[285px] my-12 md:hidden lg:w-1/3 lg:grid lg:h-auto lg:items-center'>
             <Image src={waterBottlePicture} layout={'fill'} objectFit={'contain'} />
           </div>
-          <div className="flex flex-wrap p-[10px] space-y-8 lg:w-1/3">
-            {drops.right.map((drop) => (
-              <div className="flex flex-col pt-14 space-y-2 pl-16 bg-drop-filled bg-top-left bg-no-repeat bg-left-drop-size">
+          <div className="flex flex-wrap justify-start p-[10px] space-y-8 lg:w-1/3">
+            {drops.left.map((drop, index) => (
+              <div key={index} className="flex flex-col pt-14 space-y-2 pl-16 bg-drop-filled bg-top-left bg-no-repeat bg-left-drop-size">
                 <h6 className='font-bold text-xl'>{drop.title}</h6>
                 <h6 className='text-primary font-bold text-xl leading-4'>{drop.capacity}</h6>
                 <p className='tracking-[1px]'>
@@ -162,58 +162,64 @@ export default function Home() {
           <div className='relative h-2'>
             <Image src={wavePicture} layout={'fill'} objectFit={'contain'} />
           </div>
-          <p className='text-center text-xl leading-normal px-4'>
+          <p className='text-center text-xl leading-normal px-4 md:mx-[15%] lg:mx-[26%]'>
             Bizning kompaniyamiz 2008 yilda tashkil etilgan. Suv markasi shishasi ichish, ovqat pishirish, mashg'ulotlar va hatto bolalar uchun juda yaxshi. Mahsulot 50 ta davlatda sertifikatlangan.
           </p>
         </div>
-        <div className="flex flex-wrap md:flex-nowrap">
-          {story_boxes.map(box => (
-            <div className='w-1/2'>
-              <div className="flex flex-col p-8 space-y-8 items-center">
-                <div className="bg-white shadow-omad-story rounded-full p-12 text-center max-w-[200px]">
-                  <Image src={box.picture} />
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-wrap md:justify-center items-center">
+            {story_boxes.map((box, index) => (
+              <div key={index} className='w-1/2 md:w-1/4'>
+                <div className="flex flex-col p-8 space-y-8 items-center">
+                  <div className="bg-white shadow-omad-story p-8 w-32 lg:w-40 lg:p-10 rounded-full">
+                    <Image src={box.picture} layout='responsive' />
+                  </div>
+                  <p className='text-center text-[#081F46] font-semibold tracking-[2px] leading-5 font-dosis uppercase'>{box.text}</p>
                 </div>
-                <p className='text-center text-[#081F46] font-semibold tracking-[2px] leading-5 font-dosis uppercase'>{box.text}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className='mt-8'>
           <Image src={curveWhilePicture} layout={'responsive'} />
         </div>
       </section>
       <section className="bg-section">
-        <div className="bg-white shadow-omad p-4 m-5 rounded-lg lg:py-16">
-          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-4 py-4">
-            <div className="relative p-4 lg:p-0 lg:grid lg:items-center lg:w-1/2">
-              <Image src={deliveryServicePicture} className={'rounded-full'} layout={'responsive'} />
-            </div>
-            <div className='py-8 lg:py-0 px-3 mb-8 space-y-8 lg:w-1/2'>
-              <div className="space-y-4">
-                <h1 className='text-4xl font-bold font-dosis tracking-[3px] uppercase text-center leading-tight'>
-                  Etkazib berish <span className='text-[#379eff]'>Xizmati</span>
-                </h1>
-                <p className='text-center leading-6 tracking-[2px] text-xl '>
-                  Bizning temmali tozalangan suvingizni etkazib berish xizmati bilan to'g'ridan-to'g'ri eshigingizga etkazish mumkin.
-                </p>
+        <div className="grid items-center">
+          <div className="max-w-screen-lg mx-auto bg-white shadow-omad p-10 m-4 rounded-lg lg:py-16">
+            <div className="flex flex-col space-y-2 py-4 lg:flex-row lg:space-y-0 lg:space-x-4">
+              <div className="relative p-4 lg:p-0 lg:grid lg:items-center lg:w-1/2">
+                <Image src={deliveryServicePicture} layout={'responsive'} />
               </div>
-              <div className="flex flex-col px-6 space-y-6 md:space-y-10 font-dosis">
-                {delivery_boxes.map(box => (
-                  <div className="flex items-center">
-                    <div className="w-1/4 mr-2">
-                      <Image src={box.picture} layout={'intrinsic'} />
+              <div className='py-8 lg:py-0 px-3 mb-8 space-y-12  lg:w-1/2'>
+                <div className="space-y-4">
+                  <h1 className='text-4xl font-bold font-dosis tracking-[3px] uppercase leading-tight text-center lg:text-left'>
+                    Etkazib berish <span className='text-[#379eff]'>Xizmati</span>
+                  </h1>
+                  <p className='leading-6 tracking-[2px] text-xl text-center text-main-dark lg:text-left'>
+                    Bizning temmali tozalangan suvingizni etkazib berish xizmati bilan to'g'ridan-to'g'ri eshigingizga etkazish mumkin.
+                  </p>
+                </div>
+                <div className="flex flex-col md:w-3/5 lg:w-1/2 space-y-6 lg:space-y-8 md:space-y-4 font-dosis">
+                  {delivery_boxes.map((box, index) => (
+                    <div key={index} className="flex items-center">
+                      <div className="w-1/4 mr-2">
+                        <Image src={box.picture} layout={'responsive'} />
+                      </div>
+                      <div className='flex uppercase font-bold tracking-[1px] text-footer text-xl'>
+                        <p>
+                          <span className='font-black text-primary mr-1'>|</span>
+                          {box.text}
+                        </p>
+                      </div>
                     </div>
-                    <div className='flex uppercase font-bold tracking-[1px] text-footer text-xl'>
-                      <span className='font-black text-primary mr-1'>|</span>
-                      <p>{box.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className='flex'>
-                <a href='#order' className='hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX'>
-                  <span>Hoziroq buyurtma bering</span>
-                </a>
+                  ))}
+                </div>
+                <div className='flex'>
+                  <a href='#order' className='hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX'>
+                    <span>Hoziroq buyurtma bering</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

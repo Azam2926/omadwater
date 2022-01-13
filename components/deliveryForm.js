@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import tgService from "../services/tg.service";
 import _ from 'lodash'
-import Input from "./Input";
 
 export default function DeliveryForm() {
   const { register, handleSubmit, formState: { isSubmitting, isSubmitSuccessful } } = useForm()
@@ -19,10 +18,10 @@ export default function DeliveryForm() {
   ) : (
     <form className='grid items-center space-y-4' onSubmit={handleSubmit(sendForm)}>
 
-      <Input placeholder={'Ismingiz'} type="text" required {...register('ismi', { pattern: /^[A-Za-z']+$/i, required: true, maxLength: 20 })} />
-      <Input placeholder={'Manzilingiz'} type="text" required {...register('manzili')} />
-      <Input placeholder={'Telefon raqamingiz'} type="text" required {...register('tel_nomeri', { pattern: /^[0-9+]+$/i })} />
-      <Input placeholder={'Nechta kapsula'} type="number" required {...register('soni', { pattern: /^[0-9]+$/i })} />
+      <input className='input' required {...register('ismi', { pattern: /^[A-Za-z']+$/i, required: true, maxLength: 20 })} placeholder={'Ismingiz'} />
+      <input className='input' required {...register('manzili')} placeholder={'Manzilingiz'} />
+      <input className='input' required {...register('tel_nomeri', { pattern: /^[0-9+]+$/i })} placeholder={'Telefon raqamingiz'} />
+      <input className='input' required {...register('soni', { pattern: /^[0-9]+$/i })} type="number" placeholder={'Nechta kapsula'} />
 
       <button disabled={isSubmitting} className='flex hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 transition-all duration-200 hover:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX' type="submit">
         {isSubmitting ? (

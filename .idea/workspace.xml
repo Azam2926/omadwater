@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ea600c3-8cfe-4e71-a9f6-632e60436dd1" name="Changes" comment="ome change" />
+    <list default="true" id="8ea600c3-8cfe-4e71-a9f6-632e60436dd1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +29,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -101,6 +106,9 @@
       <workItem from="1641838783030" duration="96000" />
       <workItem from="1641838906266" duration="144000" />
       <workItem from="1642108597378" duration="32000" />
+      <workItem from="1642108914875" duration="290000" />
+      <workItem from="1642109209155" duration="90000" />
+      <workItem from="1642152175636" duration="100000" />
     </task>
     <task id="LOCAL-00001" summary="ome change">
       <created>1634889864707</created>
@@ -116,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636020545210</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="shelf">
+      <created>1642109034344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642109034344</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".idea">
+      <created>1642109091257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642109091258</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ome change" />
-    <option name="LAST_COMMIT_MESSAGE" value="ome change" />
+    <MESSAGE value="shelf" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>

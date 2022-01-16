@@ -68,9 +68,6 @@ module.exports = {
   plugins: [
     plugin(function ({addUtilities}) {
       const newUtilities = {
-        '.flex-basis-31px': {
-          flexBasis: '31px',
-        },
         '.bg-omad-btn': {
           background: '#67b5ff linear-gradient(120deg, rgba(103, 151, 255, 0) 0%, #4d86ff 100%)'
         }

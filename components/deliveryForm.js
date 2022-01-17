@@ -18,7 +18,7 @@ export default function DeliveryForm() {
   ) : (
     <form className='grid items-center space-y-4' onSubmit={handleSubmit(sendForm)}>
 
-      <input autoComplete={'name'} className='input' required {...register('ismi', { pattern: /^[A-Za-z']+$/i, required: true, maxLength: 20 })} placeholder={'Ismingiz'} />
+      <input autoComplete={'name'} className='input' required {...register('ismi', { pattern: /^[A-Za-z']+$/g, required: true, maxLength: 20 })} placeholder={'Ismingiz'} />
       <input autoComplete={'street-address'} className='input' required {...register('manzili')} placeholder={'Manzilingiz'} />
       <input autoComplete={'tel'} className='input' required {...register('tel_nomeri', { pattern: /^[0-9+]+$/i })} placeholder={'Telefon raqamingiz'} />
       <input className='input' required {...register('soni', { pattern: /^[0-9]+$/i })} type="number" placeholder={'Nechta kapsula'} />

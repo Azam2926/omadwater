@@ -17,6 +17,8 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://omadwater.uz" />
           <meta property="og:site_name" content="omadwater.uz" />
+          <meta property="og:image" content="https://omadwater.uz/logo.png" />
+          <meta property="og:image:alt" content="OmadWater" />
         </Head>
         <body className={'font-nunito'}>
         <Main/>

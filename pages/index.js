@@ -216,7 +216,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className='flex'>
-                  <a href='#order' className='hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full m-auto py-btnY px-btnX'>
+                  <a href='#order' className='hover:bg-black bg-omad-btn shadow-omad font-semibold outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 cursor-pointer text-white rounded-full py-btnY px-4'>
                     <span>Hoziroq buyurtma bering</span>
                   </a>
                 </div>

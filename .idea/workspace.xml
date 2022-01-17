@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ea600c3-8cfe-4e71-a9f6-632e60436dd1" name="Changes" comment="remove custom flex-basis and put new tailwindcss basis utilities" />
+    <list default="true" id="8ea600c3-8cfe-4e71-a9f6-632e60436dd1" name="Changes" comment="remove ide files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +112,8 @@
       <workItem from="1642108914875" duration="290000" />
       <workItem from="1642109209155" duration="90000" />
       <workItem from="1642152175636" duration="100000" />
+      <workItem from="1642431572798" duration="1464000" />
+      <workItem from="1642433353008" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="ome change">
       <created>1634889864707</created>
@@ -143,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642297214139</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove ide files">
+      <created>1642431712238</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642431712238</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +179,7 @@
     <MESSAGE value="shelf" />
     <MESSAGE value=".idea" />
     <MESSAGE value="remove custom flex-basis and put new tailwindcss basis utilities" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove custom flex-basis and put new tailwindcss basis utilities" />
+    <MESSAGE value="remove ide files" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove ide files" />
   </component>
 </project>

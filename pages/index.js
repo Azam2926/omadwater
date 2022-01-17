@@ -19,12 +19,12 @@ const drops = {
   right: [
     {
       title: 'Kaltsiy Ca2+',
-      capacity: '240 mg/L',
+      capacity: '10-20 mg/L',
       body: "Bizning tanamizdagi kaltsiyning taxminan 99% suyaklarimiz va tishlarimizda."
     },
     {
       title: 'Natriy Na+',
-      capacity: '5.2 mg/L',
+      capacity: '5-10 mg/L',
       body: "Bu mushaklar va nervlarning to'g'ri ishlashi uchun muhim komponent."
     },
     {
@@ -36,12 +36,12 @@ const drops = {
   left: [
     {
       title: 'Magniy Mg2+',
-      capacity: '42 mg/L',
+      capacity: '5-15 mg/L',
       body: "Magniy tananing sog'lom bo'lishi uchun zarur bo'lgan ozuqaviy moddadir."
     },
     {
       title: 'Sulfat SO4(2-)',
-      capacity: '400 mg/L',
+      capacity: '10-20 mg/L',
       body: "Sulfat hujayralardagi eng muhim makronutrientlardan biridir."
     },
     {
@@ -94,7 +94,7 @@ export default function Home() {
         <div className='flex justify-center'>
           <div className='z-10 hidden md:block md:w-1/4 md:max-w-sm'>
             <div className='mr-[-200%] py-48 px-24'>
-              <Image src={distilledWaterBottledPicture} layout='responsive' objectFit='fill' />
+              <Image src={distilledWaterBottledPicture} layout='responsive' objectFit='fill' alt='Omadwater' />
             </div>
           </div>
           <div className='z-20 px-4 py-14 space-y-8 md:w-3/4'>
@@ -105,7 +105,7 @@ export default function Home() {
               Uyingizga suv yetkazib beramiz. Quyidagi yetkazib berish formasini to‘ldirish kifoya.
             </p>
             <div id='order' className='relative h-2'>
-              <Image src={wavePicture} layout={'fill'} objectFit={'contain'} />
+              <Image src={wavePicture} layout={'fill'} objectFit={'contain'} alt='Omadwater' />
             </div>
             <div className='bg-white max-w-[381px] mx-auto shadow-omad rounded-xl p-12 m-2 mt-4 text-base'>
               <DeliveryForm />
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
         </div>
         <div className='my-4'>
-          <Image src={waveDividerPicture} layout={'responsive'} />
+          <Image src={waveDividerPicture} layout={'responsive'} alt='Omadwater' />
         </div>
       </section>
       <section className='bg-section'>
@@ -136,7 +136,7 @@ export default function Home() {
             ))}
           </div>
           <div className='relative h-[285px] my-12 md:hidden lg:w-1/3 lg:grid lg:h-auto lg:items-center'>
-            <Image src={waterBottlePicture} layout={'fill'} objectFit={'contain'} />
+            <Image src={waterBottlePicture} layout={'fill'} objectFit={'contain'} alt='Omadwater' />
           </div>
           <div className="flex flex-wrap justify-start p-[10px] space-y-8 lg:w-1/3">
             {drops.left.map((drop, index) => (
@@ -151,7 +151,7 @@ export default function Home() {
           </div>
         </div>
         <div className='mt-8'>
-          <Image src={waveDividerPicture} layout={'responsive'} />
+          <Image src={waveDividerPicture} layout={'responsive'} alt='Omadwater' />
         </div>
       </section>
       <section className="bg-section">
@@ -160,7 +160,7 @@ export default function Home() {
             <span className='text-[#379eff]'>Bizning</span> hikoya
           </h2>
           <div className='relative h-2'>
-            <Image src={wavePicture} layout={'fill'} objectFit={'contain'} />
+            <Image src={wavePicture} layout={'fill'} objectFit={'contain'} alt='Omadwater' />
           </div>
           <p className='text-center text-xl leading-normal px-4 md:mx-[15%] lg:mx-[26%]'>
             Bizning kompaniyamiz 2008 yilda tashkil etilgan. Suv markasi shishasi ichish, ovqat pishirish, mashg'ulotlar va hatto bolalar uchun juda yaxshi. Mahsulot 50 ta davlatda sertifikatlangan.
@@ -172,7 +172,7 @@ export default function Home() {
               <div key={index} className='w-1/2 md:w-1/4'>
                 <div className="flex flex-col p-8 space-y-8 items-center">
                   <div className="bg-white shadow-omad-story p-8 w-32 lg:w-40 lg:p-10 rounded-full">
-                    <Image src={box.picture} layout='responsive' />
+                    <Image src={box.picture} layout='responsive' alt='Omadwater' />
                   </div>
                   <p className='text-center text-[#081F46] font-semibold tracking-[2px] leading-5 font-dosis uppercase'>{box.text}</p>
                 </div>
@@ -181,7 +181,7 @@ export default function Home() {
           </div>
         </div>
         <div className='mt-8'>
-          <Image src={curveWhilePicture} layout={'responsive'} />
+          <Image src={curveWhilePicture} layout={'responsive'} alt='Omadwater' />
         </div>
       </section>
       <section className="bg-section">
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="max-w-screen-lg mx-auto bg-white shadow-omad p-10 m-4 rounded-lg lg:py-16">
             <div className="flex flex-col space-y-2 py-4 lg:flex-row lg:space-y-0 lg:space-x-4">
               <div className="relative p-4 lg:p-0 lg:grid lg:items-center lg:w-1/2">
-                <Image src={deliveryServicePicture} layout={'responsive'} />
+                <Image src={deliveryServicePicture} layout={'responsive'} alt='Omadwater' />
               </div>
               <div className='py-8 lg:py-0 px-3 mb-8 space-y-12  lg:w-1/2'>
                 <div className="space-y-4">
@@ -204,7 +204,7 @@ export default function Home() {
                   {delivery_boxes.map((box, index) => (
                     <div key={index} className="flex items-center">
                       <div className="w-1/4 mr-2">
-                        <Image src={box.picture} layout={'responsive'} />
+                        <Image src={box.picture} layout={'responsive'} alt='Omadwater' />
                       </div>
                       <div className='flex uppercase font-bold tracking-[1px] text-footer text-xl'>
                         <p>

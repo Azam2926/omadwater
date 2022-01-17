@@ -20,8 +20,8 @@ export default function Navbar() {
             </span>
           </button>
           <Link href={'/'}>
-            <a className='w-10 h-10 relative flex-grow ml-6 mr-[70px]'>
-              <Image src={logo} layout='fill' objectFit='contain'/>
+            <a className='w-10 text-4xl text-center font-black flex-grow ml-6 mr-[70px]'>
+              <span className='text-primary'>Omad</span>Water
             </a>
           </Link>
         </div>

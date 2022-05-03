@@ -13,10 +13,6 @@ export default function About() {
       </h1>
     </section>
 
-    <div className='flex space-x-2 p-2 m-2 rounded bg-primary text-white'>
-      <div className="rounded font-bold bg-footer flex-grow">flex 1</div>
-      <div className="rounded font-bold bg-footer">flex 2</div>
-    </div>
-
+   
   </>)
 }

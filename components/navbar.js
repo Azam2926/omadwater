@@ -61,7 +61,7 @@ export default function Navbar() {
               </a>
             </div>
             <div className="flex">
-              <a href="tel:+998990981375" className='flex flex-wrap items-center justify-center content-center my-3'>
+              <a href="tel:+998939652829" className='flex flex-wrap items-center justify-center content-center my-3'>
                 <p className="mr-2 font-bold">+998 99 0981375</p>
                 <p>Bizga qo'ng'iroq qiling</p>
               </a>

@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex font-semibold flex-col space-y-4 text-[15px]">
             <h1 className="flex before-text text-xl font-bold">Biz bilan bog'laning</h1>
             <p><a href="//g.page">Buxoro, Shofirkon, Bog'iafzal</a></p>
-            <p><a href="tel:+998990981375">Qo'n'griroq qiling: +998 99 0981375</a></p>
+            <p><a href="tel:+998939652829">Qo'n'griroq qiling: +998 99 0981375</a></p>
           </div>
           <div className="flex font-semibold flex-col space-y-4 text-[15px]">
             <h1 className="flex before-text text-xl font-bold">Ijtimoiy tarmoqlarimiz</h1>
